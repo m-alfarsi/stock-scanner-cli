@@ -22,7 +22,7 @@ Built for disciplined traders who want clean, actionable insights without noise.
 ### 1. Clone the repo
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/stock-scanner-cli.git
+git clone https://github.com/m.alfarsi/stock-scanner-cli.git
 cd stock-scanner-cli
 ```
 
