@@ -1,21 +1,27 @@
-# stock-scanner-cli
-A fast, multi-ticker CLI tool that scans stocks using strict SMA, RSI, and MACD logic. Outputs BUY, SELL, or HOLD signals with color-coded feedback and clear reasoning. Built for disciplined traders who want clean, actionable insights without noise.
+# 📊 strict-signal-scanner
 
-🚀 How to Use
-- Install dependencies
+A fast, multi-ticker CLI tool that scans stocks using strict SMA, RSI, and MACD logic.  
+Outputs BUY, SELL, or HOLD signals with color-coded feedback and clear reasoning.  
+Built for disciplined traders who want clean, actionable insights without noise.
+
+---
+
+## 🔧 Features
+
+- ✅ Scans multiple tickers in one run  
+- 📊 Uses SMA5/10, RSI(7), MACD(6,13,4) for signal logic  
+- 🖥️ CLI-based, lightweight, and fast  
+- 🎨 Color-coded output with signal breakdowns  
+- 📁 Fallback support for CSV data if API fails  
+- 🧠 Designed for weekend prep, batch scanning, and strict workflows
+
+---
+
+## 🚀 How to Use
+
+### 1. Install dependencies
+
 Make sure you have Python 3.8+ and install required packages:
+
+```bash
 pip install yfinance pandas termcolor
-- Run the scanner
-Use the command line to scan multiple tickers:
-python resilient_multi_ticker_signal.py AAPL MSFT NVDA
-- Read the output
-The script will print a color-coded summary:
-- 🟢 BUY — All conditions met (SMA5 > SMA10, RSI < 70, MACD > Signal)
-- 🔴 SELL — Reverse conditions met
-- 🟡 HOLD — At least one condition failed (with reason shown)
-- Fallback to CSV ()
-If live data fails, place a file named TICKER.csv in the same folder.
-It should include columns like Date, Open, High, Low, Close, Volume.
-
-Note: You need to download your own csv.
-
